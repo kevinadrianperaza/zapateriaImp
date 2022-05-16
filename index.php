@@ -143,7 +143,7 @@ if(isset($_SESSION["items_carrito"]))
 <div><h2>Productos</h2></div>
 <div class="contenedor_general">
 	<?php
-	/*VaidrollTeam*/
+	
 	$productos_array = $usar_db->vaiquery("SELECT * FROM productos ORDER BY id ASC");
 	if (!empty($productos_array)) 
 	{ 
