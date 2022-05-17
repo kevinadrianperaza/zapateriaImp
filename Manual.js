@@ -12,10 +12,9 @@ var pasos =[
     element: "#Paso1",
     title: "Valores   ",
     content: "Clic para agregar productos a la BD",
-    placement: 'right',
+    placement: 'left',
     onShow: function(){
-              // $("#nuevasol").prop('disabled', true);
-              //$("#Nombre").val('Kevin');
+            
             },
   orphan: true            
   },
@@ -26,8 +25,7 @@ var pasos =[
     content: "Podemos modificar la cantidad de items que deseamos comprar",
     placement: 'right',
     onShow: function(){
-              // $("#nuevasol").prop('disabled', true);
-              //$("#Apellido1").val('Adrián');
+            
             },
   orphan: true            
   },
@@ -39,8 +37,18 @@ var pasos =[
     placement: 'right',
     onShow: function(){
               
-              $("#Paso3").click();
-              //$("#Apellido2").val('Peraza');
+            },
+  orphan: true            
+  },
+  {
+    element: "#Paso3",
+    title: "Valores   ",
+    content: "Clic en Agregar para añadirlo al carrito",
+    placement: 'right',
+    onShow: function(){
+              
+      $("#Paso3").click();
+        
             },
   orphan: true            
   },
@@ -48,11 +56,10 @@ var pasos =[
 {
     element: "#Paso4",
     title: "Valores   ",
-    content: "Agregue su género",
+    content: "Boton para limpiar todos los items del carrito",
     placement: 'right',
     onShow: function(){
-              // $("#nuevasol").prop('disabled', true);
-              $("#Sexo").val('Masculino');
+              
             },
   orphan: true            
   },
@@ -60,11 +67,10 @@ var pasos =[
 	{
     element: "#Paso5",
     title: "Valores   ",
-    content: "Agregue el año actual",
+    content: "Boton para eliminar item del carrito",
     placement: 'right',
     onShow: function(){
-              // $("#nuevasol").prop('disabled', true);
-              $("#valor1").val('2022');
+              
             },
   orphan: true            
 	},
@@ -72,11 +78,22 @@ var pasos =[
   {
     element: "#Paso6",
     title: "Valores   ",
-    content: "Agregue su año de nacimiento",
+    content: "Clic para pagar los items del carrito",
     placement: 'right',
     onShow: function(){
-              // $("#nuevasol").prop('disabled', true);
-              $("#valor2").val('1998');
+              
+            },
+  orphan: true            
+  },
+
+  {
+    element: "#Paso6",
+    title: "Valores   ",
+    content: "Clic para pagar los items del carrito",
+    placement: 'right',
+    onShow: function(){
+      $("#Paso6").click();
+              
             },
   orphan: true            
   },
@@ -87,8 +104,7 @@ var pasos =[
     content: "Presione el botón de calcular",
     placement: 'auto',
     onShow: function(){
-              // $("#nuevasol").prop('disabled', true);
-              //$("#multiplicar").button
+             
             },
   orphan: true            
   },
@@ -99,8 +115,7 @@ var pasos =[
     content: "Visualizará su edad",
     placement: 'auto',
     onShow: function(){
-              // $("#nuevasol").prop('disabled', true);
-              //$("#multiplicar").button
+              
             },
   orphan: true            
   }

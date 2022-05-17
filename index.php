@@ -78,27 +78,26 @@ switch($_GET["accion"])
 <html>
 <meta charset="UTF-8">
 <head>
-<title>Zapateria G&B</title>
-<link href="style.css" rel="stylesheet" />
+
 <link rel="stylesheet" type="text/css" href="bootstrap-tour/css/bootstrap-tour-standalone.min.css">
+<link href="style.css" rel="stylesheet" />
 <script src="jquery/jquery-1.8.2.min.js"></script>
 <script src="bootstrap-tour/js/bootstrap-tour-standalone.min.js"></script>
 <script src="manual.js"></script>
-
+<title>Zapateria G&B</title>
 
 
 </head>
 
 <body>
+
 <button id="Manual" onclick="IniciaManual()">Manual </button>	
 
-      <div class="collapse navbar-collapse" id="navb">
         <form class="form-inline my-2 my-lg-0">
 			<h1 align ="center">Zapateria G&B</h1>
           <div id= "Paso1" align="right"><a class="btn btn-primary" href="productos.php" role="button">Lista productos</a></div>
         </form>
-      </div>
-  </nav>
+
 <div>
 <div><h2>Lista de productos a comprar</h2></div>
 
@@ -117,7 +116,7 @@ if(isset($_SESSION["items_carrito"]))
 <th style="width:10%">Cantidad</th>
 <th style="width:10%">Precio x unidad</th>
 <th style="width:10%">Precio</th>
-<th style="width:10%"><a href="index.php?accion=vacio">Limpiar</a></th>
+<th style="width:10%"><a id="Paso4" href="index.php?accion=vacio">Limpiar</a></th>
 </tr>	
 <?php		
     foreach ($_SESSION["items_carrito"] as $item){
@@ -129,7 +128,7 @@ if(isset($_SESSION["items_carrito"]))
 				<td><?php echo $item["txtcantidad"]; ?></td>
 				<td><?php echo "$ ".$item["vai_pre"]; ?></td>
 				<td><?php echo "$ ". number_format($item_price,2); ?></td>
-				<td><a href="index.php?accion=eliminar&eliminarcode=<?php echo $item["vai_cod"]; ?>">Eliminar</a></td>
+				<td><a id="Paso5" href="index.php?accion=eliminar&eliminarcode=<?php echo $item["vai_cod"]; ?>">Eliminar</a></td>
 				</tr>
 				<?php
 				$totcantidad += $item["txtcantidad"];
@@ -141,7 +140,7 @@ if(isset($_SESSION["items_carrito"]))
 <td colspan="2"><b>Total de productos:</b></td>
 <td><b><?php echo $totcantidad; ?></b></td>
 <td colspan="2"><strong><?php echo "$ ".number_format($totprecio, 2); ?></strong></td>
-<td><a href="index.php?accion=pagar">Pagar</a></td>
+<td><a id="Paso6" href="index.php?accion=pagar">Pagar</a></td>
 </tr>
 
 </table>		
