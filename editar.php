@@ -10,8 +10,8 @@ while($mostrar = mysqli_fetch_array($querybuscar))
 {
     $id = $mostrar['id'];
     $codigo = $mostrar['cod'];
-    $nombre = $mostrar['nombre'];
-	$precio = $mostrar['precio'];
+    $nombre = $mostrar['nom'];
+	$precio = $mostrar['pre'];
 }
 ?>
 <html>

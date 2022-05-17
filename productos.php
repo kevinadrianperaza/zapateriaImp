@@ -68,12 +68,9 @@ function cancelarform() {
   <form action="agregar.php" class="contenedor_popup" method="POST">
         <table>
 		<tr><th colspan="2">Nuevo producto</th></tr>
+            
             <tr> 
-                <td>Id</td>
-                <td><input type="text" name="txtid" required></td>
-            </tr>
-            <tr> 
-                <td>Codigo</td>
+                <td>Código</td>
                 <td><input type="text" name="txtcod" required></td>
             </tr>
             <tr> 

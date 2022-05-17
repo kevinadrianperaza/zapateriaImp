@@ -80,13 +80,22 @@ switch($_GET["accion"])
 <head>
 <title>Zapateria G&B</title>
 <link href="style.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="bootstrap-tour/css/bootstrap-tour-standalone.min.css">
+<script src="jquery/jquery-1.8.2.min.js"></script>
+<script src="bootstrap-tour/js/bootstrap-tour-standalone.min.js"></script>
+<script src="manual.js"></script>
+
+
+
 </head>
+
 <body>
+<button id="Manual" onclick="IniciaManual()">Manual </button>	
 
       <div class="collapse navbar-collapse" id="navb">
         <form class="form-inline my-2 my-lg-0">
 			<h1 align ="center">Zapateria G&B</h1>
-          <div align="right"><a class="btn btn-primary" href="productos.php" role="button">Lista productos</a></div>
+          <div id= "Paso1" align="right"><a class="btn btn-primary" href="productos.php" role="button">Lista productos</a></div>
         </form>
       </div>
   </nav>
@@ -157,15 +166,14 @@ if(isset($_SESSION["items_carrito"]))
 		foreach($productos_array as $i=>$k)
 		{
 	?>
-		<div class="contenedor_productos">
+		<div id="Paso2" class="contenedor_productos">
 			<form method="POST" action="index.php?accion=agregar&cod=
 			<?php echo $productos_array[$i]["cod"]; ?>">
 			<div><img src="<?php echo $productos_array[$i]["img"]; ?>"></div>
 			<div>
 			<div style="padding-top:20px;font-size:18px;"><?php echo $productos_array[$i]["nom"]; ?></div>
 			<div style="padding-top:10px;font-size:20px;"><?php echo "$".$productos_array[$i]["pre"]; ?></div>
-			<div><input type="text" name="txtcantidad" value="1" size="2" /><input type="submit" value="Agregar" />
-			</div>
+			<div><input id="Paso2" type="text" name="txtcantidad" value="1" size="2" /><input id="Paso3" type="submit" value="Agregar" /></div>
 			</div>
 			</form>
 		</div>
