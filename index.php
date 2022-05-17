@@ -68,7 +68,7 @@ switch($_GET["accion"])
 		unset($_SESSION["items_carrito"]);
 	break;	
 	case "pagar":
-	echo "<script> alert('Gracias por su compra - VaidrollTeam');window.location= 'index.php' </script>";
+	echo "<script> alert('Gracias por su compra');window.location= 'index.php' </script>";
 		unset($_SESSION["items_carrito"]);
 	
 	break;	
@@ -82,7 +82,14 @@ switch($_GET["accion"])
 <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-<div align="center"><h1>Zapateria G&B</h1></div>
+
+      <div class="collapse navbar-collapse" id="navb">
+        <form class="form-inline my-2 my-lg-0">
+			<h1 align ="center">Zapateria G&B</h1>
+          <div align="right"><a class="btn btn-primary" href="productos.php" role="button">Lista productos</a></div>
+        </form>
+      </div>
+  </nav>
 <div>
 <div><h2>Lista de productos a comprar</h2></div>
 
