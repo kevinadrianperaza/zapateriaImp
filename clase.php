@@ -9,7 +9,7 @@ class DBControl {
 	
 	function conectarDB() 
 	{
-		$conn = mysqli_connect("localhost","root","","vaicarrito1");
+		$conn = mysqli_connect("localhost","root","","zapateria");
 		return $conn;
 	}
 	
