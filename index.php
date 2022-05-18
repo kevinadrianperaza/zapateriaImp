@@ -78,9 +78,8 @@ switch($_GET["accion"])
 <html>
 <meta charset="UTF-8">
 <head>
-
 <link rel="stylesheet" type="text/css" href="bootstrap-tour/css/bootstrap-tour-standalone.min.css">
-<link href="style.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
 <script src="jquery/jquery-1.8.2.min.js"></script>
 <script src="bootstrap-tour/js/bootstrap-tour-standalone.min.js"></script>
 <script src="manual.js"></script>
@@ -95,7 +94,7 @@ switch($_GET["accion"])
 
         <form class="form-inline my-2 my-lg-0">
 			<h1 align ="center">Zapateria G&B</h1>
-          <div id= "Paso1" align="right"><a class="btn btn-primary" href="productos.php" role="button">Lista productos</a></div>
+          <div id= "Paso1" align="right"><a class="btn btn-primary" href="login.html" role="button">Iniciar Sesión</a></div>
         </form>
 
 <div>

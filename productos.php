@@ -7,7 +7,7 @@ include_once("conexion.php");
 		<title>Lista Zapatos</title>
 		<meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="bootstrap-tour/css/bootstrap-tour-standalone.min.css">
-        <link rel="stylesheet" href="styleproductos.css">
+        <link rel="stylesheet" href="css/styleproductos.css">
         <script src="jquery/jquery-1.8.2.min.js"></script>
         <script src="bootstrap-tour/js/bootstrap-tour-standalone.min.js"></script>
         <script src="ManualProductos.js"></script>
