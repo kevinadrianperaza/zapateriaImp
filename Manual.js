@@ -1,6 +1,6 @@
-/*  Manual de usuario
-*/
+//  Manual de usuario
 //--Recorrido del usuario
+
 var pasos =[
  {
     title: "Manual interactivo",
@@ -40,24 +40,13 @@ var pasos =[
             },
   orphan: true            
   },
-  {
-    element: "#Paso3",
-    title: "Valores   ",
-    content: "Clic en Agregar para añadirlo al carrito",
-    placement: 'right',
-    onShow: function(){
-              
-      $("#Paso3").click();
-        
-            },
-  orphan: true            
-  },
+  
 
 {
     element: "#Paso4",
     title: "Valores   ",
     content: "Boton para limpiar todos los items del carrito",
-    placement: 'right',
+    placement: 'left',
     onShow: function(){
               
             },
@@ -68,7 +57,7 @@ var pasos =[
     element: "#Paso5",
     title: "Valores   ",
     content: "Boton para eliminar item del carrito",
-    placement: 'right',
+    placement: 'left',
     onShow: function(){
               
             },
@@ -79,46 +68,12 @@ var pasos =[
     element: "#Paso6",
     title: "Valores   ",
     content: "Clic para pagar los items del carrito",
-    placement: 'right',
+    placement: 'left',
     onShow: function(){
-              
+            //$("#Paso6").click();
             },
   orphan: true            
   },
-
-  {
-    element: "#Paso6",
-    title: "Valores   ",
-    content: "Clic para pagar los items del carrito",
-    placement: 'right',
-    onShow: function(){
-      $("#Paso6").click();
-              
-            },
-  orphan: true            
-  },
-
-  {
-    element: "#Paso8",
-    title: "Resultado",
-    content: "Presione el botón de calcular",
-    placement: 'auto',
-    onShow: function(){
-             
-            },
-  orphan: true            
-  },
-
-  {
-    element: "#Paso7",
-    title: "Calcular",
-    content: "Visualizará su edad",
-    placement: 'auto',
-    onShow: function(){
-              
-            },
-  orphan: true            
-  }
 
 
 ];
@@ -135,7 +90,6 @@ function IniciaManual(){
     });
     
     tour.init();
-    
     tour.restart();
     
 };

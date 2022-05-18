@@ -172,7 +172,7 @@ if(isset($_SESSION["items_carrito"]))
 			<div>
 			<div style="padding-top:20px;font-size:18px;"><?php echo $productos_array[$i]["nom"]; ?></div>
 			<div style="padding-top:10px;font-size:20px;"><?php echo "$".$productos_array[$i]["pre"]; ?></div>
-			<div><input id="Paso2" type="text" name="txtcantidad" value="1" size="2" /><input id="Paso3" type="submit" value="Agregar" /></div>
+			<div><input id="Paso2" type="text" name="txtcantidad" value="1" size="2" /><input id="Paso3" type="submit" value="Agregar"/></div>
 			</div>
 			</form>
 		</div>
